@@ -10,7 +10,7 @@ const viewsPath = path.join(dir,'../templates/views')
 const partialsPath = path.join(dir,'../templates/partials')
 // app variable stores our express application
 const app = express()
-
+const port = process.env.PORT || 3000
 //set up handlebars enginer, views location and partials location
 app.set('view engine','hbs')
 app.set('views',viewsPath)
@@ -82,6 +82,6 @@ app.get('*',(req,res)=>{
     res.render('404',{title:'Not found',errorMessage:'page not found',name:'ilhan'})
 })
 
-app.listen(3000,()=>{
+app.listen(port,()=>{
     console.log('Server is listening')
 })
