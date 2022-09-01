@@ -20,16 +20,16 @@ weatherForm.addEventListener('submit',(e)=>{
                     }
                     weatherReport.textContent=''
                     let br = document.createElement('br')
-                    let textNode = document.createTextNode("Location : " + data.location)
+                    let textNode = document.createTextNode("Location : " + data.location+".")
                     weatherReport.appendChild(textNode)
                     weatherReport.appendChild(br);
 
                     br = document.createElement('br')
-                    textNode = document.createTextNode("Temperature : " +data.temperature)
+                    textNode = document.createTextNode("Temperature : " +data.temperature +" degrees.")
                     weatherReport.appendChild(textNode)
                     weatherReport.appendChild(br);
 
-                    textNode = document.createTextNode("Description : " +data.description)
+                    textNode = document.createTextNode("Description : " +data.description+" . It feels like "+data.feelslike+" degrees.")
                     weatherReport.appendChild(textNode)
 
                 
