@@ -1,3 +1,2 @@
-Built a weather app using Node.js that gives the user information about the weather.
-
-Implemented using weatherstack API and mapbox API
+Built a weather application using Node.JS for the Backend and HTML, Vanilla CSS, Javascript for the Frontend
+Utilized weatherstack API and mapbox API and deployed it on heroku.
